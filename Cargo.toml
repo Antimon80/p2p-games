@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "p2p-core",
+  "transport-iroh",
+  "app-cli",
+]
+resolver = "2"
