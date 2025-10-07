@@ -250,7 +250,7 @@ pub fn make_envelope<T>(
 ///
 /// *Primary key*: smaller `since_ts` wins (earlier claim).
 /// *Tie-breaker*: lexicographically smaller `owner_peer_id` wins.
-pub fn name_clame_wins(a_owner: &str, a_ts: u64, b_owner: &str, b_ts: u64) -> bool {
+pub fn name_claim_wins(a_owner: &str, a_ts: u64, b_owner: &str, b_ts: u64) -> bool {
     if a_ts != b_ts {
         a_ts < b_ts
     } else {
